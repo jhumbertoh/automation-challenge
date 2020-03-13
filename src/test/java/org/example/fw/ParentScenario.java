@@ -16,7 +16,7 @@ public class ParentScenario {
 	public void startChrome() {
 
 		try {
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			driver.manage().window().setPosition(new Point(0, 0));
